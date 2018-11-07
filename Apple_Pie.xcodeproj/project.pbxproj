@@ -12,6 +12,7 @@
 		5006AD352192E4D7002D76AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006AD332192E4D7002D76AD /* Main.storyboard */; };
 		5006AD372192E4D8002D76AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5006AD362192E4D8002D76AD /* Assets.xcassets */; };
 		5006AD3A2192E4D8002D76AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006AD382192E4D8002D76AD /* LaunchScreen.storyboard */; };
+		5006AD422192F94D002D76AD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006AD412192F94D002D76AD /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5006AD362192E4D8002D76AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5006AD392192E4D8002D76AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5006AD3B2192E4D8002D76AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5006AD412192F94D002D76AD /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				5006AD2F2192E4D7002D76AD /* AppDelegate.swift */,
 				5006AD312192E4D7002D76AD /* ViewController.swift */,
 				5006AD332192E4D7002D76AD /* Main.storyboard */,
+				5006AD412192F94D002D76AD /* Game.swift */,
 				5006AD362192E4D8002D76AD /* Assets.xcassets */,
 				5006AD382192E4D8002D76AD /* LaunchScreen.storyboard */,
 				5006AD3B2192E4D8002D76AD /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5006AD322192E4D7002D76AD /* ViewController.swift in Sources */,
+				5006AD422192F94D002D76AD /* Game.swift in Sources */,
 				5006AD302192E4D7002D76AD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.bartwitting.Apple-Pie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "nl.bartwitting.Apple-Pie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
