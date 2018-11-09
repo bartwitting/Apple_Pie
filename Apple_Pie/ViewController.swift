@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     var totalLosses = 0{
         didSet {
             let alert = UIAlertController(title: "You Lost..", message: "Shame! You didn't get \"\(currentGame.word)\"", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Next word", style: .default, handler: {action in self.newRound()}))
+            alert.addAction(UIAlertAction(title: "Try again", style: .default, handler: {action in self.newRound()}))
             present(alert, animated: true, completion: nil)
         }
     }
@@ -57,6 +57,9 @@ class ViewController: UIViewController {
             updateUI()
         }
         else {
+            let alert = UIAlertController(title: "Done:)", message: "You won \(totalWins) times and lost \(totalLosses) times", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Bye", style: .default, handler: {action in exit(0)}))
+            present(alert, animated: true, completion: nil)
             enableLetterButtons(false)
         }
     }
@@ -76,7 +79,9 @@ class ViewController: UIViewController {
             totalLosses += 1
         }
         else if currentGame.word == currentGame.formattedWord {
+            updateUI()
             totalWins += 1
+            updateUI()
         }
         else {
             updateUI()
