@@ -21,12 +21,16 @@ class ViewController: UIViewController {
     let incorrectMovesAllowed = 7
     var totalWins = 0 {
         didSet {
-            newRound()
+            let alert = UIAlertController(title: "You won!", message: "Well done! You guessed the word \"\(currentGame.word)\"", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Next word", style: .default, handler: {action in self.newRound()}))
+            present(alert, animated: true, completion: nil)
         }
     }
     var totalLosses = 0{
         didSet {
-            newRound()
+            let alert = UIAlertController(title: "You Lost..", message: "Shame! You didn't get \"\(currentGame.word)\"", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Next word", style: .default, handler: {action in self.newRound()}))
+            present(alert, animated: true, completion: nil)
         }
     }
     
