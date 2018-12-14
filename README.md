@@ -5,7 +5,7 @@ In dit project heb ik het spel galgje nagemaakt. Door op de letters te klikken k
 
 Zo ziet het spel er uit:
 ![Begin van het spel](/doc/Start.png)
-Als de letter goed is komt hij onderaan te zien, als je de verkeerde kiest verdwijnt een appel.
+Als de letter goed is komt hij in het te raden woord te staat, als je de verkeerde kiest verdwijnt een appel. De letters blokkeren nadat ze zijn aangetikt
 ![Letter kiezen en spelen](/doc/Raden.png)
 Als je wint komt die onderaan bij "Wins" te staan, als je verliest zal dat bij "Losses" te zien zijn
 ![Wins en Losses worden weergeven](/doc/Progress.png)
