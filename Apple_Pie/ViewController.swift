@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         }
     }
     
-    /// Building the app
+    /// Building the screen
     override func viewDidLoad() {
         super.viewDidLoad()
         newRound()
