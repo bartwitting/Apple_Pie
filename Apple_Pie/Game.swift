@@ -12,9 +12,10 @@ struct Game {
     var incorrectMovesRemaining : Int
     var guessedLetters : [Character]
     
+    /// This variable makes the stripped word and fills in the letters
     var formattedWord : String {
         var guessedWord = ""
-        for char in word.characters {
+        for char in word {
             if guessedLetters.contains(char) {
                 guessedWord += "\(char)"
             }
@@ -25,9 +26,10 @@ struct Game {
         return guessedWord
     }
     
+    /// Function to check the guessedletters and store them
     mutating func playerGuessed(letter:Character) {
         guessedLetters.append(letter)
-        if !word.characters.contains(letter) {
+        if !word.contains(letter) {
             incorrectMovesRemaining -= 1
         }
     }
