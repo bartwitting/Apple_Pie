@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var letterButtons: [UIButton]!
     
     /// Defining variables
-    var words : [String] = ["appel", "fiets", "eetlepel", "teenschaartje", "jazzzangeres"]
+    var words = wordsList
     let incorrectMovesAllowed = 7
     var currentGame : Game!
     
@@ -66,7 +66,9 @@ class ViewController: UIViewController {
             wordField.text = ""
         }
         else {
+            correctWord.text = guessedWord
             totalLosses += 1
+            wordField.text = ""
         }
     }
     
@@ -79,7 +81,9 @@ class ViewController: UIViewController {
             updateUI()
         }
         else {
+            correctWord.text = "See you next time! : )"
             let alert = UIAlertController(title: "Done:)", message: "You won \(totalWins) times and lost \(totalLosses) times", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Play Again", style: .default, handler: {action in self.playAgain()}))
             alert.addAction(UIAlertAction(title: "Bye", style: .default, handler: {action in exit(0)}))
             present(alert, animated: true, completion: nil)
             enableLetterButtons(false)
@@ -117,6 +121,11 @@ class ViewController: UIViewController {
         for button in letterButtons {
             button.isEnabled = b
         }
+    }
+    
+    func playAgain() {
+        words = wordsList
+        newRound()
     }
 }
 

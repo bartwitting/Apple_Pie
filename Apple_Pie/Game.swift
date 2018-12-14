@@ -34,3 +34,5 @@ struct Game {
         }
     }
 }
+
+let wordsList : [String] = ["appel", "fiets", "eetlepel", "teennagelschaartje", "jazzzangeres"]
