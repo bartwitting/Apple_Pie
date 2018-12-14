@@ -18,6 +18,6 @@ Nu notificaties als je gewonnen hebt of verloren hebt
 Je kunt nu ook gehele worden invoeren
 ![Woord](/doc/Raden1.png)
 Deze mag niet leeg zijn
-![Leeg](/doc/Empty.png)
+![Leeg](/doc/Leeg.png)
 Aan het einde kun je kiezen om het spel nog eens te spelen
 ![Klaar](/doc/Klaar.png)
